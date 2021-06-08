@@ -1,0 +1,77 @@
+<diagram program="umletino" version="14.4.0-SNAPSHOT"><zoom_level>10</zoom_level><help_text>[valid input]
+</help_text><element><id>UMLGeneric</id><coordinates><x>90</x><y>170</y><w>110</w><h>40</h></coordinates><panel_attributes>_:Owner</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>130</x><y>260</y><w>20</w><h>380</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>130</x><y>640</y><w>30</w><h>70</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;50</additional_attributes></element><element><id>UMLActor</id><coordinates><x>120</x><y>100</y><w>60</w><h>110</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>300</x><y>170</y><w>170</w><h>40</h></coordinates><panel_attributes>OwnerRegActivity</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>360</x><y>260</y><w>20</w><h>390</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>360</x><y>640</y><w>30</w><h>80</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;60</additional_attributes></element><element><id>Relation</id><coordinates><x>360</x><y>200</y><w>40</w><h>80</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;12;60</additional_attributes></element><element><id>Relation</id><coordinates><x>130</x><y>200</y><w>40</w><h>80</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;12;60</additional_attributes></element><element><id>Relation</id><coordinates><x>146</x><y>290</y><w>230</w><h>40</h></coordinates><panel_attributes>lt=-&gt;
+onSuccessfulRegister()</panel_attributes><additional_attributes>10;20;210;20</additional_attributes></element><element><id>Relation</id><coordinates><x>146</x><y>310</y><w>230</w><h>40</h></coordinates><panel_attributes>lt=&lt;-
+Confirmation Message</panel_attributes><additional_attributes>10;20;210;20</additional_attributes></element><element><id>UMLFrame</id><coordinates><x>152</x><y>260</y><w>210</w><h>340</h></coordinates><panel_attributes>Alt
+
+--
+
+
+
+-.
+
+
+
+
+
+-.
+
+
+
+
+
+
+
+-.
+
+
+
+
+-.
+
+
+
+
+
+
+
+
+--
+
+
+
+
+
+
+
+
+
+
+
+
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>146</x><y>350</y><w>230</w><h>40</h></coordinates><panel_attributes>lt=-&gt;
+showEmptyFieldsDetected()</panel_attributes><additional_attributes>10;20;210;20</additional_attributes></element><element><id>Relation</id><coordinates><x>146</x><y>490</y><w>230</w><h>40</h></coordinates><panel_attributes>lt=&lt;-
+Error Message</panel_attributes><additional_attributes>10;20;210;20</additional_attributes></element><element><id>Relation</id><coordinates><x>146</x><y>460</y><w>230</w><h>40</h></coordinates><panel_attributes>lt=-&gt;
+showEmailAlreadyExists()</panel_attributes><additional_attributes>10;20;210;20</additional_attributes></element><element><id>Relation</id><coordinates><x>146</x><y>390</y><w>230</w><h>40</h></coordinates><panel_attributes>lt=&lt;-
+Error Message</panel_attributes><additional_attributes>10;20;210;20</additional_attributes></element><element><id>Relation</id><coordinates><x>146</x><y>550</y><w>230</w><h>40</h></coordinates><panel_attributes>lt=-&gt;
+showInvalidEmail()</panel_attributes><additional_attributes>10;20;210;20</additional_attributes></element><element><id>Relation</id><coordinates><x>146</x><y>570</y><w>230</w><h>40</h></coordinates><panel_attributes>lt=&lt;-
+Error Message</panel_attributes><additional_attributes>10;20;210;20</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>520</x><y>170</y><w>170</w><h>40</h></coordinates><panel_attributes>OwnerRegPresenter</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>610</x><y>250</y><w>20</w><h>390</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>610</x><y>630</y><w>30</w><h>80</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;60</additional_attributes></element><element><id>Relation</id><coordinates><x>610</x><y>200</y><w>40</w><h>70</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;12;50</additional_attributes></element><element><id>UMLFrame</id><coordinates><x>382</x><y>260</y><w>230</w><h>340</h></coordinates><panel_attributes>Alt
+
+--
+
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>376</x><y>290</y><w>260</w><h>40</h></coordinates><panel_attributes>lt=-&gt;
+onRegister()</panel_attributes><additional_attributes>10;20;236;20</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>760</x><y>170</y><w>170</w><h>40</h></coordinates><panel_attributes>OwnerDAOMemory</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>830</x><y>240</y><w>20</w><h>410</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLFrame</id><coordinates><x>632</x><y>260</y><w>200</w><h>340</h></coordinates><panel_attributes>Alt
+
+--
+
+
+
+
+
+
+
+
+-.</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>626</x><y>290</y><w>230</w><h>40</h></coordinates><panel_attributes>lt=-&gt;
+save()</panel_attributes><additional_attributes>10;20;206;20</additional_attributes></element><element><id>Relation</id><coordinates><x>830</x><y>200</y><w>40</w><h>60</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;12;40</additional_attributes></element><element><id>Relation</id><coordinates><x>366</x><y>460</y><w>480</w><h>40</h></coordinates><panel_attributes>lt=-&gt;
+                                                          isEmailTaken()</panel_attributes><additional_attributes>10;20;456;20</additional_attributes></element><element><id>Relation</id><coordinates><x>830</x><y>640</y><w>30</w><h>80</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;60</additional_attributes></element></diagram>

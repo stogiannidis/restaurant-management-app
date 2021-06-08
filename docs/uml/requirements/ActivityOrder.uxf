@@ -1,0 +1,23 @@
+<diagram program="umletino" version="14.4.0-SNAPSHOT"><zoom_level>10</zoom_level><help_text>Space for diagram notes
+</help_text><element><id>Relation</id><coordinates><x>580</x><y>42</y><w>30</w><h>70</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>10;50;10;10</additional_attributes></element><element><id>UMLSpecialState</id><coordinates><x>580</x><y>32</y><w>20</w><h>20</h></coordinates><panel_attributes>type=initial</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLState</id><coordinates><x>540</x><y>182</y><w>100</w><h>50</h></coordinates><panel_attributes>Πλοήγηση 
+στο μενού</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLState</id><coordinates><x>540</x><y>292</y><w>100</w><h>40</h></coordinates><panel_attributes>Επιλογή
+Αγαθών</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>580</x><y>222</y><w>30</w><h>90</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>10;70;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>580</x><y>322</y><w>30</w><h>110</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>10;90;10;10</additional_attributes></element><element><id>UMLState</id><coordinates><x>740</x><y>592</y><w>100</w><h>40</h></coordinates><panel_attributes>Επιβεβαίωση
+Παραγγελίας</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>780</x><y>622</y><w>30</w><h>80</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>10;60;10;10</additional_attributes></element><element><id>UMLSpecialState</id><coordinates><x>780</x><y>682</y><w>20</w><h>20</h></coordinates><panel_attributes>type=final</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLSpecialState</id><coordinates><x>740</x><y>402</y><w>100</w><h>100</h></coordinates><panel_attributes>type=decision
+Θελεις να 
+ακυρώσει 
+την παραγγελία;</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>780</x><y>492</y><w>50</w><h>120</h></coordinates><panel_attributes>lt=&lt;-
+Όχι</panel_attributes><additional_attributes>10;100;10;10</additional_attributes></element><element><id>UMLState</id><coordinates><x>540</x><y>92</y><w>100</w><h>50</h></coordinates><panel_attributes>Εκκαθάριση
+καλαθιού</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>580</x><y>132</y><w>30</w><h>70</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>10;50;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>630</x><y>196</y><w>200</w><h>150</h></coordinates><panel_attributes>lt=&lt;-
+m2=[Επιλογή αγαθού σε έλλειψη]</panel_attributes><additional_attributes>10;10;60;10;60;120;10;120</additional_attributes></element><element><id>Relation</id><coordinates><x>260</x><y>196</y><w>300</w><h>150</h></coordinates><panel_attributes>lt=&lt;-
+m2=[Εισαγωγή λανθασμένουν ονόματος προϊόντος]</panel_attributes><additional_attributes>280;10;220;10;220;120;280;120</additional_attributes></element><element><id>UMLSpecialState</id><coordinates><x>540</x><y>412</y><w>100</w><h>90</h></coordinates><panel_attributes>type=decision
+Θελεις να 
+προσθέσεις
+κάτι άλλο;</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>210</x><y>216</y><w>350</w><h>260</h></coordinates><panel_attributes>lt=&lt;-
+
+
+
+Ναι</panel_attributes><additional_attributes>330;10;10;10;10;240;330;240</additional_attributes></element><element><id>Relation</id><coordinates><x>630</x><y>436</y><w>130</w><h>40</h></coordinates><panel_attributes>lt=&lt;-
+Όχι</panel_attributes><additional_attributes>110;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>630</x><y>166</y><w>230</w><h>310</h></coordinates><panel_attributes>lt=&lt;-
+               Ναι
+
+</panel_attributes><additional_attributes>10;20;210;20;210;290</additional_attributes></element></diagram>

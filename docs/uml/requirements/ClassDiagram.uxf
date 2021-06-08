@@ -1,0 +1,179 @@
+<diagram program="umletino" version="14.4.0-SNAPSHOT"><zoom_level>10</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLClass</id><coordinates><x>540</x><y>460</y><w>210</w><h>230</h></coordinates><panel_attributes>Order
+--
+-&lt;&lt;key&gt;&gt;orderNumber: int
+isPaid: boolean
+verifies: boolean
+preparationTime: int
+available: ArrayList&lt;ProductItem&gt;
+basket: ArrayList&lt;MenuItem&gt;
+
+--
++addItem(MenuItem item)
++clearBasket()
++isContained(MenuItem menuItem)
++verify()
++getBasket()
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>900</x><y>530</y><w>220</w><h>170</h></coordinates><panel_attributes>Customer
+--
+-&lt;&lt;key&gt;&gt;username: String
+email : String
+password : String
+orderId: int
+currentOrder: Order
+
+--
++createOrder(ArrayList&lt;MenuItem&gt; p)
+
+
+
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>740</x><y>580</y><w>180</w><h>50</h></coordinates><panel_attributes>lt=-
+m1=0..n
+m2=0..1
+</panel_attributes><additional_attributes>10;20;160;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>570</x><y>70</y><w>210</w><h>130</h></coordinates><panel_attributes>ProductItem
+--
+-&lt;&lt;key&gt;&gt;name:String
+cost: double
+quantityMade: int
+
+--
++modifyQuantity(int number)
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>640</x><y>380</y><w>60</w><h>100</h></coordinates><panel_attributes>lt=-
+m1=0..n
+m2=1..n
+          
+</panel_attributes><additional_attributes>10;10;10;80</additional_attributes></element><element><id>UMLClass</id><coordinates><x>540</x><y>770</y><w>210</w><h>150</h></coordinates><panel_attributes>Table
+--
+-&lt;&lt;key&gt;&gt;tableNumber:int
+totalCost:double
+dailyOrders: ArrayList&lt;Order&gt;
+
+--
++addOrder(Order order)
++addtotalCost(double totalCost)
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>910</x><y>780</y><w>210</w><h>140</h></coordinates><panel_attributes>Employee
+--
+-&lt;&lt;key&gt;&gt;username: String
+email : String
+password : String
+job: String
+
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>630</x><y>680</y><w>50</w><h>110</h></coordinates><panel_attributes>lt=-
+m1=0..1
+m2=0..1
+</panel_attributes><additional_attributes>10;90;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>740</x><y>810</y><w>190</w><h>50</h></coordinates><panel_attributes>lt=-
+m1=0..n
+m2=0..1
+</panel_attributes><additional_attributes>10;20;170;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>910</x><y>290</y><w>210</w><h>150</h></coordinates><panel_attributes>Owner
+--
+-&lt;&lt;key&gt;&gt;username: String
+email : String
+password : String
+numberOfTables: int
+
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1230</x><y>550</y><w>210</w><h>140</h></coordinates><panel_attributes>Customer DAOMemory
+--
+-customers: ArrayList()&lt;Customer&gt;
+
+--
++save(Customer customer)
++find(Customer customer)
++findall()
++delete(Customer customer)
++isEmailTaken(String email)
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>910</x><y>40</y><w>210</w><h>150</h></coordinates><panel_attributes>Owner DAOMemory
+--
+-owners: ArrayList()&lt;Owner&gt;
+
+--
++save(Owner owner)
++find(Owner owner)
++findall()
++delete(Owner owner)
++isEmailTaken(String email)</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>200</x><y>770</y><w>210</w><h>150</h></coordinates><panel_attributes>Table DAOMemory
+--
+-tables: ArrayList()&lt;Table&gt;
+
+--
++save(Table table)
++find(Table table)
++findAll()
++delete(Table table)
++getAvailableTables()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1250</x><y>780</y><w>210</w><h>150</h></coordinates><panel_attributes>Employee DAOMemory
+--
+-employees: ArrayList()&lt;Employee&gt;
+
+--
++save(Employee employee)
++find(Employee employee)
++findall()
++delete(Employee employee)
++isEmailTaken(String email)</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1110</x><y>610</y><w>140</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+m1=1
+m2=*
+</panel_attributes><additional_attributes>10;20;120;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>200</x><y>520</y><w>210</w><h>170</h></coordinates><panel_attributes>Order DAOMemory
+--
+-orders:ArrayList()&lt;Order &gt;
+
+--
++save(Order order)
++find(Order order)
++findall()
++delete(Order order)
++findUnverified()
++findUnpaid()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>180</x><y>60</y><w>250</w><h>150</h></coordinates><panel_attributes>ProductItem DAOMemory
+--
+-productItems: ArrayList()&lt;ProductItem &gt;
+
+--
++save(ProductItem productItem)
++find(ProductItem productItem)
++findAll()
++delete(ProductItem productItem)</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>550</x><y>260</y><w>210</w><h>130</h></coordinates><panel_attributes>MenuItem
+--
+-&lt;&lt;key&gt;&gt;name:String
+quantity: int
+
+--
++modifyQuantity(int number)
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>200</x><y>260</y><w>210</w><h>160</h></coordinates><panel_attributes>MenuItem DAOMemory
+--
+-items: ArrayList()&lt;MenuItem&gt;
+
+--
++save(MenuItem item)
++find(MenuItem item)
++findall()
++delete(MenuItem item)</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>630</x><y>330</y><w>900</w><h>700</h></coordinates><panel_attributes>lt=-
+m1= 1
+m2=1..n
+</panel_attributes><additional_attributes>490;10;880;10;880;680;10;680;10;590</additional_attributes></element><element><id>Relation</id><coordinates><x>650</x><y>190</y><w>40</w><h>90</h></coordinates><panel_attributes>lt=-
+m1=1
+
+
+m2=1
+</panel_attributes><additional_attributes>10;10;10;70</additional_attributes></element><element><id>Relation</id><coordinates><x>1110</x><y>830</y><w>160</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+m1=1
+m2=*
+</panel_attributes><additional_attributes>10;20;140;20</additional_attributes></element><element><id>Relation</id><coordinates><x>400</x><y>584</y><w>160</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+m1=1
+m2=*
+</panel_attributes><additional_attributes>10;20;140;20</additional_attributes></element><element><id>Relation</id><coordinates><x>400</x><y>314</y><w>170</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+m1=1
+m2=*
+</panel_attributes><additional_attributes>10;20;150;20</additional_attributes></element><element><id>Relation</id><coordinates><x>400</x><y>834</y><w>160</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+m1=1
+m2=*
+</panel_attributes><additional_attributes>10;20;140;20</additional_attributes></element><element><id>Relation</id><coordinates><x>420</x><y>124</y><w>170</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+m1=1
+m2=*
+</panel_attributes><additional_attributes>10;20;150;20</additional_attributes></element><element><id>Relation</id><coordinates><x>1000</x><y>184</y><w>40</w><h>130</h></coordinates><panel_attributes>lt=&lt;-
+m1=1
+m2=*
+</panel_attributes><additional_attributes>10;10;10;110</additional_attributes></element></diagram>
